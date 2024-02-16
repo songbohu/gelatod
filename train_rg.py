@@ -60,8 +60,8 @@ def run_experiment():
     training_args = Seq2SeqTrainingArguments(
         output_dir="./output/rg_model",
         learning_rate=1e-3,
-        per_device_train_batch_size=16,
-        per_device_eval_batch_size=16,
+        per_device_train_batch_size=32,
+        per_device_eval_batch_size=32,
         weight_decay=0.01,
         save_total_limit=int(1),
         predict_with_generate=True,
