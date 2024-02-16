@@ -1,4 +1,4 @@
-# GelaToD: A very small ToD Dataset for Gelato
+# GelaToD: A Very Small ToD Dataset for Gelato
 
 A very small and LLM generated task oriented dialogue dataset for gelato. 🍨
 
@@ -7,8 +7,7 @@ A very small and LLM generated task oriented dialogue dataset for gelato. 🍨
 
 ## Overview
 
-GelaToD offers an arguably the first dataset for one of the most important business, gelato shops! This dataset contains hypothetical and simplified dialogues between a customer and an assistant in the Jack's Gelato. This dataset provides resources for state tracking models and response generation models.
-
+GelaToD offers arguably the first dataset for one of the most important businesses, gelato shops! This dataset contains hypothetical and simplified dialogues between a customer and an assistant in Jack's Gelato, one of the most important shops for Cambridge students! This dataset provides resources for state tracking models and response generation models.
 
 ## Project Structure
 
