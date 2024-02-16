@@ -1,0 +1,87 @@
+We have a very nice ice cream shop called Jack's Gelato. Here is their webpage: https://www.jacksgelato.com
+
+Here is the flavour they have for today:
+
+Baked Vanilla
+Manuka Honey & Fig
+Roasted Banana
+Caramel
+King’s College Lavender
+Gianduja (vegan)
+Passion Fruit Sorbet (vegan)
+House Yoghurt
+Dark Chocolate & Sea Salt (vegan)
+Treacle Cake
+Strawberries & Cream
+Coconut, Raspberry Ripple (vegan)
+Organic Whisky; Nc’nean (+£3)
+
+And each day, there is a secret flavour that will not shown on the menu. The staff will only tell you if you explicitly ask about this secret flavour. They also update this secret flavour on their Instagram page. The secret flavour for today is coconut and ube. Not all customers will ask about the secret flavour.
+
+Here are the pricing and options for the ice cream.
+
+Single Scoop £2.90
+Double Scoop £4.90
+Triple Scoop £6.90
+Chocolate Dipped Waffle Cone + £1.40
+
+Or the customer could choose to serve the ice cream in a normal cone or a paper cup. There is no additional fee for choosing a normal cone or a cup. Each customer will only place one order. For example, one customer may buy one Triple Scoop, but the customer will not buy Double Scoop and Triple Scoop at the same time.
+
+Could you help me generate one task-oriented dialogue between a customer and a shop assistant? The output format should be in JSON format. Each dialogue utterance from the customer should be annotated with a dialogue state. The dialogue state has three keys, "flavours", "size" and "container". There should not be any other keys in the state. The "size" could only have one of the following values: Single Scoop, Double Scoop, Triple Scoop. There is no need to annotate the assistant utterance with this dialogue state. This dialogue state is also a JSON object that summarises the belief of the user based on the dialogue history.
+
+Here is an example dialogue:
+
+[
+  {
+    "speaker": "customer",
+    "utterance": "Hi, could you tell me what the secret flavour is today?",
+    "state": {
+      "flavours": [],
+      "size": "",
+      "container": ""
+    }
+  },
+  {
+    "speaker": "assistant",
+    "utterance": "Sure, the secret flavour today is coconut and ube."
+  },
+  {
+    "speaker": "customer",
+    "utterance": "Sounds delicious! I'll have a single scoop of the coconut and ube in a chocolate dipped waffle cone, please.",
+    "state": {
+      "flavours": ["coconut and ube"],
+      "size": "Single Scoop",
+      "container": "Chocolate Dipped Waffle Cone"
+    }
+  },
+  {
+    "speaker": "assistant",
+    "utterance": "Great choice! That will be £4.30 in total. Anything else for you today?"
+  },
+  {
+    "speaker": "customer",
+    "utterance": "Yes, can I also get a double scoop with Manuka Honey & Fig and Roasted Banana in a paper cup?",
+    "state": {
+      "flavours": ["coconut and ube", "Manuka Honey & Fig", "Roasted Banana"],
+      "size": "Double Scoop",
+      "container": "Paper Cup"
+    }
+  },
+  {
+    "speaker": "assistant",
+    "utterance": "Of course, that'll be £4.90 for the double scoop. Your total comes to £9.20. Will that be all?"
+  },
+  {
+    "speaker": "customer",
+    "utterance": "That's all, thank you!",
+    "state": {
+      "flavours": ["coconut and ube", "Manuka Honey & Fig", "Roasted Banana"],
+      "size": "Double Scoop",
+      "container": "Paper Cup"
+    }
+  },
+  {
+    "speaker": "assistant",
+    "utterance": "You're welcome! Your ice creams will be ready shortly."
+  }
+]
